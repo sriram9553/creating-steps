@@ -1,9 +1,9 @@
 const progress = document.getElementById("progress");
-const prev = document.getElementById("prev");
-const next = document.getElementById("next");
+const prev = document.getElementById("Prev");
+const next = document.getElementById("Next");
 const circles = document.querySelectorAll(".circle");
 
-var currentActive = 1;
+let currentActive = 1;
 next.addEventListener("click", () => {
     currentActive++
     if (currentActive > circles.length) {
@@ -12,7 +12,7 @@ next.addEventListener("click", () => {
    
     result();
 })
-prev.addEventListener("click", () => {
+prev.addEventListener('click', () => {
     currentActive--
     if (currentActive < 1) {
         currentActive = 1;
